@@ -20,7 +20,7 @@ public class RestaurantsController {
 
     private final RestaurantsRepository restaurantsRepository;
 
-    // http:localhost:8080/api/v1/restaurants
+    // http://localhost:8080/api/v1/restaurants
     @GetMapping(value = "/restaurants")
     public Page<Restaurants> getAllRestaurants() {
         log.info("Thread Info: {}", Thread.currentThread());

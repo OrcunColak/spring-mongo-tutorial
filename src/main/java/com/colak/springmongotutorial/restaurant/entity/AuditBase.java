@@ -5,17 +5,16 @@ import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
 import org.springframework.data.annotation.LastModifiedBy;
 import org.springframework.data.annotation.LastModifiedDate;
+import org.springframework.data.annotation.Version;
 
 import java.time.Instant;
 
 @Getter
 public class AuditBase {
 
-    // This is always empty for some reason
     @CreatedDate
     private Instant createdDate;
 
-    // This is always empty for some reason
     @CreatedBy
     private String createdBy;
 
@@ -24,4 +23,8 @@ public class AuditBase {
 
     @LastModifiedBy
     private String lastModifiedBy;
+
+    // See https://stackoverflow.com/questions/35584271/spring-data-mongodb-annotation-createddate-isnt-working-when-id-is-assigned-m
+    @Version
+    private Long version;
 }

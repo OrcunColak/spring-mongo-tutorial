@@ -6,11 +6,19 @@ import java.util.Optional;
 
 public class AuditorAwareImpl implements AuditorAware<String> {
 
-    public static final String USER_NAME = "myuser";
+    private String userName = "my-user";
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void setUserName(String userName) {
+        this.userName = userName;
+    }
 
     @Override
     public Optional<String> getCurrentAuditor() {
         // get user from the security context
-        return Optional.of(USER_NAME);
+        return Optional.of(userName);
     }
 }

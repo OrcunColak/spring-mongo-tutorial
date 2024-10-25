@@ -1,4 +1,4 @@
-package com.colak.springmongotutorial.restaurant.entity;
+package com.colak.springtutorial.restaurant.entity;
 
 import lombok.Getter;
 import org.springframework.data.annotation.CreatedBy;

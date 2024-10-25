@@ -1,4 +1,4 @@
-package com.colak.springmongotutorial.restaurant.entity;
+package com.colak.springtutorial.restaurant.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

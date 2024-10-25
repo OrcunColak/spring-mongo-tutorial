@@ -1,7 +1,7 @@
-package com.colak.springmongotutorial.restaurant.repository;
+package com.colak.springtutorial.restaurant.repository;
 
-import com.colak.springmongotutorial.config.AuditorAwareImpl;
-import com.colak.springmongotutorial.restaurant.entity.Restaurants;
+import com.colak.springtutorial.config.AuditorAwareImpl;
+import com.colak.springtutorial.restaurant.entity.Restaurants;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
